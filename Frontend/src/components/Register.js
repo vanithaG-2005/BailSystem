@@ -24,7 +24,7 @@ function Register() {
       return;
     }
     try {
-      await axios.post('http://localhost:5000/api/auth/register', {
+      await axios.post('https://bailsystem.onrender.com/api/auth/register', {
         username,
         password,
         role,
@@ -79,5 +79,6 @@ function Register() {
     </div>
   );
 }
+
 
 export default Register;
